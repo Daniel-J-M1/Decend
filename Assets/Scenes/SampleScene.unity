@@ -228,7 +228,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -242,7 +242,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.076921
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -285,8 +285,8 @@ GameObject:
   - component: {fileID: 583464520}
   - component: {fileID: 583464519}
   m_Layer: 0
-  m_Name: Square
-  m_TagString: Untagged
+  m_Name: TestCard
+  m_TagString: Cards
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,7 +350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583464516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.16, y: -3.05, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -366,7 +366,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -396,6 +396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tmp: {fileID: 2125566054}
   IsMouseOver: 0
+  Card: {fileID: 0}
 --- !u!1 &655105695
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,8 +473,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655105695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.5259676, y: 8.427623, z: 1}
+  m_LocalPosition: {x: -0.08, y: 0.11, z: 0}
+  m_LocalScale: {x: 5.841845, y: 10.323056, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -602,13 +603,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1877151952}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 937bd30cc5113d446bdcadc353886f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cards: []
   Card: {fileID: 583464516}
   CL: {fileID: 583464520}
+  BreadCrumbs: 0
 --- !u!4 &1877151954
 Transform:
   m_ObjectHideFlags: 0
